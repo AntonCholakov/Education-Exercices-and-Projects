@@ -1,0 +1,146 @@
+.icon {
+	background: url('../images/sprite.png') no-repeat;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+}
+
+.comment {
+	background-position: 0 0;
+}
+
+.comment_add {
+	background-position: -16px 0;
+}
+
+.comment_delete {
+	background-position: -32px 0;
+}
+
+.comment_edit {
+	background-position: -48px 0;
+}
+
+.comments {
+	background-position: -64px 0;
+}
+
+.comments_add {
+	background-position: -80px 0;
+}
+
+.comments_delete {
+	background-position: -96px 0;
+}
+
+.folder {
+	background-position: 0 -16px;
+}
+
+.folder_add {
+	background-position: -16px -16px;
+}
+
+.folder_delete {
+	background-position: -32px -16px;
+}
+
+.folder_edit {
+	background-position: -48px -16px;
+}
+
+.group {
+	background-position: -64px -16px;
+}
+
+.group_add {
+	background-position: -80px -16px;
+}
+
+.group_delete {
+	background-position: -96px -16px;
+}
+
+.group_edit {
+	background-position: 0 -32px;
+}
+
+.page_white {
+	background-position: -16px -32px;
+}
+
+.page_white_acrobat {
+	background-position: -32px -32px;
+}
+
+.page_white_actionscript {
+	background-position: -48px -32px;
+}
+
+.page_white_add {
+	background-position: -64px -32px;
+}
+
+.page_white_c {
+	background-position: -80px -32px;
+}
+
+.page_white_camera {
+	background-position: -96px -32px;
+}
+
+.page_white_cplusplus {
+	background-position: 0 -48px;
+}
+
+.page_white_csharp {
+	background-position: -16px -48px;
+}
+
+.page_white_cup {
+	background-position: -32px -48px;
+}
+
+.page_white_delete {
+	background-position: -48px -48px;
+}
+
+.page_white_edit {
+	background-position: -64px -48px;
+}
+
+.page_white_excel {
+	background-position: -80px -48px;
+}
+
+.page_white_php {
+	background-position: -96px -48px;
+}
+
+.page_white_php {
+	background-position: -96px -48px;
+}
+
+.page_white_powerpoint {
+	background-position: 0 -64px;
+}
+
+.page_white_ruby {
+	background-position: -16px -64px;
+}
+
+.user{
+	background-position: -32px -64px;
+}
+
+.user_add{
+	background-position: -48px -64px;
+}
+
+.user_delete{
+	background-position: -64px -64px;
+}
+
+.user_edit{
+	background-position: -80px -64px;
+}

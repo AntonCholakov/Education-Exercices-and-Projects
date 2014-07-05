@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 6</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+	
+		<script type="text/javascript">
+		
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			var counter = 0;
+			// Entering elements in the array
+			for (var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter  an element of the array"));
+			}
+
+			var result = {}, max = 0, res;
+			for (var i in array) {
+				result[array[i]] = (result[array[i]] || 0) + 1;
+				if (result[array[i]] > max) { 
+					max = result[array[i]]; 
+					counter++;
+					res = array[i]; }
+			}
+			
+			document.write("Most freqent number in your array is: " + res + " (" + counter + " times)");
+
+		</script>
+
+	</body>
+</html>

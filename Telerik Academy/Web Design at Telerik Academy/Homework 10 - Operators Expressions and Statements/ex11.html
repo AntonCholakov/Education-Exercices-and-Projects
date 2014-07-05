@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 11</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter a number"));
+			var position = parseInt(window.prompt("Enter a position"));
+			var bit;
+			var binNumber = number.toString(2);
+			
+			number = number>>position;
+
+			if ( number % 2 == 0 ) {
+				bit = 0;
+			}
+			else {
+				bit = 1;
+			}
+			
+			alert("Your number represented as binary is " + binNumber + ", so the bit on position " + position + ", counting from 0, is " + bit);
+			
+		
+			
+		</script>
+			
+	</body>
+</html>

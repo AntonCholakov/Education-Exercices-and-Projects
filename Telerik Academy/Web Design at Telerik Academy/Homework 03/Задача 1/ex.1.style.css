@@ -1,0 +1,37 @@
+body {
+	background-color: #595959;
+	font-weight: bold;
+}
+
+a {
+	color: #E7D99A;
+	text-decoration: none;
+}
+
+td {
+	padding: 4px;
+}
+
+.tablehead {
+	font-size: 20px;
+	color: #B7AD9C;
+}
+
+.left {
+	width: 120px;
+	font-style: italic;
+	color: #CEDCD5;
+	vertical-align: top;
+}
+
+.right{
+	color: #959C91;
+}
+
+.red-text {
+	color: #D70606;
+}
+
+.not_answered {
+	color: #CD6540;
+}

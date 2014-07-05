@@ -1,0 +1,62 @@
+﻿ul {
+	list-style-type: none;
+}
+
+li {
+	float: left;
+	padding: 15px;
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #A7162E;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+span {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #CFCFCF;
+	padding: 15px;
+	padding-top: 14px;
+	margin-left: -30px;
+}
+
+.left_part {
+	background-image: url('images/menuLeft.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 50px;
+	margin-top: -15px;
+}
+
+.main_part {
+	background-image: url('images/menuGradient.png');
+	background-repeat: repeat-x;
+}
+
+.main_part:nth-child(2) span {
+	border-left: 0;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.main_part:nth-child(5) span {
+	border-right: 0;
+	padding-right: 0px;
+}
+
+.main_part:hover {
+	text-decoration: underline;
+}
+
+span:active {
+	opacity: 0.5;
+}
+
+.right_part {
+	background-image: url('images/menuRight.png');
+	background-repeat: no-repeat;
+	height: 50px;
+}

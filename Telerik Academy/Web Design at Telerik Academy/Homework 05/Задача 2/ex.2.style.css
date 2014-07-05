@@ -1,0 +1,81 @@
+﻿#main {
+	border-radius: 12px;
+	font-family: sans-serif;
+	background-color: #EEEEEE;
+	width: 424px;
+	height: 500px;
+}
+
+div#main section {
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+header {
+	color: #3A3A3A;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+section {
+	background-color: #FFF;
+	border: 1px solid #A6A6A6;
+	width: 400px;
+	height: 118px;
+}
+
+article {
+	font-size: 12px;
+	width: 190px;
+	position: relative;
+		left: 168px;
+		top: -104px;
+}
+
+.buttons {
+	position: relative;
+		left: 100px;
+		top: 8px;
+}
+
+.button-listen {
+	width: 70px;
+	height: 24px;
+	background-image: url('images/button.png');
+}
+
+.button-add {
+	width: 50px;
+	height: 24px;
+	background-image: url('images/button2.png');
+}
+
+#first-image {
+	margin: 14px;
+	width: 138px;
+	height: 88px;
+	background-image: url('images/pic1.png');
+	background-repeat: no-repeat;
+}
+
+#second-image {
+	margin: 14px;
+	width: 138px;
+	height: 88px;
+	background-image: url('images/pic2.png');
+	background-repeat: no-repeat;
+}
+
+
+#third-image {
+	margin: 14px;
+	width: 138px;
+	height: 88px;
+	background-image: url('images/pic3.png');
+	background-repeat: no-repeat;
+}
+
+.buttons-text {
+	color: #FFF;
+}

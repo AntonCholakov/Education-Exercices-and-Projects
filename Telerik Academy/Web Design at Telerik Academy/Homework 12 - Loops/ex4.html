@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var n = parseInt(window.prompt("Enter N"));
+			var k = parseInt(window.prompt("Enter K"));
+			var nFact = 1;
+			var kFact = 1;
+			var result = 0;
+			
+			if (k > n && n > 1) {
+				
+				do {
+					nFact *= n;
+					n--;
+				} while (n>0);
+				
+				do {
+					kFact *= k;
+					k--;
+				} while (k>0);
+				
+				result = nFact / kFact;
+				alert("The result of N! / K! is " + result);
+				
+			}
+			else {
+				alert("K must be bigger than N and both must be bigger than 1");
+			}
+			
+		</script>
+			
+	</body>
+</html>

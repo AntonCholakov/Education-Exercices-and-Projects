@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 9</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var x = parseInt(window.prompt("Enter x"));
+			var y = parseInt(window.prompt("Enter y"));
+			var inCircle = false;
+			var inRectangleX = false;
+			var inRectangleY = false;
+			var inRectangle = false;
+			
+			if (( x - 1)*( x - 1 ) + ( y - 1 )*( y - 1 ) < 9) {
+				inCircle = true;
+			}
+			
+			if ( x > -1 && x < 5 ){
+				inRectangleX = true;
+			}
+			
+			if ( y > -1 && y < 1 ){
+				inRectangleY = true;
+			}
+			
+			if ( inRectangleX == true && inRectangleY == true ){
+				inRectangle = true;
+			}
+			
+			if ( inCircle == true && inRectangle == false ){
+				alert("The point is within a circle with radius 5 and outside of the rectangle");
+			}
+			else {
+				alert("The point is not within a circle with radius 5 and outside of the rectangle");
+			}
+		</script>
+			
+	</body>
+</html>

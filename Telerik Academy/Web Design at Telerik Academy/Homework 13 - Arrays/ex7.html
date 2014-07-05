@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 7</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+		
+		function findIndex() {
+			//Declaring variables
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			var element = window.prompt("Enter the element you want to check for (in which position is)");
+			var min = 0;
+			var max = array.length-1;
+			var mid;
+			//Creating elements of the array
+			for(var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter a number of your array"));
+			}
+			//Checking part
+			while (min <= max ) {
+				mid = parseInt((min + max ) / 2);
+				if (array[mid] == element) {
+					return mid;
+				} else if (array[mid] < element) {
+					min = mid + 1;
+				} else {
+					max = mid - 1;
+				}
+			}
+		}
+
+		document.write(findIndex());
+		</script>
+			
+	</body>
+</html>

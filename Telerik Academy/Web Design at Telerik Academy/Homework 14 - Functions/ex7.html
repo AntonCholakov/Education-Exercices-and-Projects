@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 7</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter your number"));
+			
+			function reversingNumber(number) {
+				do {
+					document.write(number%10);
+					number = parseInt(number / 10);
+				} while(number>0);
+			}
+			
+			reversingNumber(number);
+			
+		</script>
+			
+	</body>
+</html>

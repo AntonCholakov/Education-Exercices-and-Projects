@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var lastNumber = parseInt(window.prompt("Enter the last number of your sequence"));
+			
+			for (var counter = 1; counter <= lastNumber ; counter++) {
+				if ( counter % 3 == 0 && counter % 7 == 0 ) {
+					continue;
+				}
+				else {
+					document.write(counter);
+					document.write(", ");
+				}
+			}
+			
+		</script>
+			
+	</body>
+</html>

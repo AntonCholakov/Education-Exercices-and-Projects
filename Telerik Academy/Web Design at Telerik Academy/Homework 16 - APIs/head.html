@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Head</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />	
+	</head>
+	
+	<body>
+		
+		<div id="wrapper">
+
+			<canvas id="the-canvas" width="600" height="600">
+				Your browser doesn't support Canvas.
+			</canvas>
+
+			<script>
+				var canvasCtx = document.getElementById("the-canvas").getContext("2d");
+
+				// Head
+				canvasCtx.fillStyle = "rgba(144,202,215,1)";
+				canvasCtx.moveTo(200, 200);
+				canvasCtx.arc(150, 200, 50, 0, Math.PI*2, false);
+				canvasCtx.fill();
+
+				canvasCtx.fillStyle = "#000";
+				canvasCtx.scale(0.45, 0.70);
+				canvasCtx.beginPath();
+				canvasCtx.arc(282, 250, 4, 0, Math.PI*2, false);
+				canvasCtx.fill();
+
+				canvasCtx.scale(0.85, 0.9);
+				canvasCtx.beginPath();
+				canvasCtx.arc(410, 277, 5, 0, Math.PI*2, false);
+				canvasCtx.fill();
+
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.scale(1.85, 0.90);
+				canvasCtx.beginPath();
+				canvasCtx.arc(224, 308, 8, 0, Math.PI*2, false);
+				canvasCtx.stroke();
+
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.scale(0.92, 0.90);
+				canvasCtx.beginPath();
+				canvasCtx.arc(197, 343, 8, 0, Math.PI*2, false);
+				canvasCtx.stroke();
+
+				canvasCtx.moveTo(220, 346);
+				canvasCtx.lineTo(210, 390);
+				canvasCtx.lineTo(225, 390);
+				canvasCtx.stroke();
+
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.scale(0.90, 0.40);
+				canvasCtx.beginPath();
+				canvasCtx.arc(250, 1090, 29, 0, Math.PI*2, false);
+				canvasCtx.stroke();
+
+				// Hat
+				canvasCtx.fillStyle = "rgb(0, 100, 230)";
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.scale(1.45, 1.20);
+				canvasCtx.beginPath();
+				canvasCtx.arc(172, 600, 60, 0, Math.PI*2, false);
+				canvasCtx.fill();
+				canvasCtx.stroke();
+
+				canvasCtx.strokeRect(130, 340, 80, 223);
+				canvasCtx.fillRect(130, 340, 80, 248);
+
+				canvasCtx.scale(1.00, 0.92);
+				canvasCtx.beginPath();
+				canvasCtx.arc(170, 600, 40, 0, Math.PI*2 - 3, false);
+				canvasCtx.fill();
+				canvasCtx.stroke();
+
+				canvasCtx.scale(1.00, 0.92);
+				canvasCtx.beginPath();
+				canvasCtx.arc(170, 400, 40, 0, Math.PI*2, false);
+				canvasCtx.fill();
+				canvasCtx.stroke();
+
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.moveTo(130, 390);
+				canvasCtx.lineTo(130, 660);
+				canvasCtx.moveTo(210, 390);
+				canvasCtx.lineTo(210, 660);
+				canvasCtx.stroke();
+
+			</script>
+
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 5</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+	
+		<script type="text/javascript">
+		
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			
+			for (var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter an element of the array"));
+			}
+
+			var i, j, minIndex, tmp; // declaring some variables for the next loop
+			for (i = 0; i < n - 1; i++) { // n is equal to the array length
+				minIndex = i;
+				for (j = i + 1; j < n; j++)
+				if (array[j] < array[minIndex])
+				minIndex = j;
+				if (minIndex != i) {
+				tmp = array[i];
+				array[i] = array[minIndex];
+				array[minIndex] = tmp;
+				}
+			}
+			
+			document.write("Your sorted array is - " + array);
+			
+		</script>
+	</body>
+</html>

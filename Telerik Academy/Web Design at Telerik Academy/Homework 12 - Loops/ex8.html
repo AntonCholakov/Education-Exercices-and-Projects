@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 8</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+
+		<script type="text/javascript">
+			
+			var a = parseInt(window.prompt("Enter a"));
+			var b = parseInt(window.prompt("Enter b"));
+
+			function gcd(a,b) {
+				if (a < 0) {
+					a = -a;
+				}
+				if (b < 0) {
+					b = -b;
+				}
+				if (b > a) {
+					var temp = a; 
+					a = b; b = temp;
+				}
+				while (true) {
+					a %= b;
+					if (a == 0) return b;
+					b %= a;
+					if (b == 0) return a;
+				}
+			}
+			
+			function gcd_rec(a, b) {
+				if (b) {
+					return gcd_rec(b, a % b);
+				} else {
+					return Math.abs(a);
+				}
+			}
+
+			alert("The greatest common divisor of " + a + " and " + b + " is " + gcd(a,b));
+			
+			
+		</script>
+			
+	</body>
+</html>

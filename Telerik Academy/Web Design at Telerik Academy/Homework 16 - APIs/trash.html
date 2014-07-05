@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Trash me</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />	
+		<script>	
+			var trashid;
+			
+			function drag(ev) {
+				ev.dataTransfer.setData("text", ev.target.id);
+				trashid = ev.target.id;
+				trashid = trashid + '';
+				return trashid;
+			}
+
+			function drop(ev) {
+				ev.preventDefault();
+			}
+			
+			function openTrash() {
+				var trashbucket = document.getElementById('trash-bucket');
+				trashbucket.style.backgroundPosition = "218px 0";
+			}
+
+			function closeTrash() {
+				var trashbucket = document.getElementById('trash-bucket');
+				trashbucket.style.backgroundPosition = "0 0";
+				document.getElementById(trashid).style.display = "none";
+			}	
+			
+
+			
+		</script>
+	</head>
+	
+	<body>
+		
+		<div id="wrapper">
+				
+			<div id="trash-bucket" ondrop="drop(event)" ondragover="openTrash()"
+			ondragleave="closeTrash()">
+				<!-- Here is the trash bucket -->
+			</div>
+			
+			<!-- Here starts the piece of trash that can be removed by dragging -->
+			<div id="random-place">
+				<div id="trash1" class="trash" draggable="true" ondragstart="drag(event)"></div>
+				<div id="trash2" class="trash" draggable="true" ondragstart="drag(event)"></div>
+				<div id="trash3" class="trash" draggable="true" ondragstart="drag(event)"></div>
+				<div id="trash4" class="trash" draggable="true" ondragstart="drag(event)"></div>
+				<div id="trash5" class="trash" draggable="true" ondragstart="drag(event)"></div>
+				<div id="trash6" class="trash" draggable="true" ondragstart="drag(event)"></div>
+			</div>
+			
+		</div>
+	
+	</body>
+</html>

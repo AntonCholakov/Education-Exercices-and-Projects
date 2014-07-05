@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bike</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />	
+	</head>
+	
+	<body>
+		
+		<div id="wrapper">
+				
+			<canvas id="the-canvas" width="600" height="600">
+				Your browser doesn't support Canvas.
+			</canvas>
+				
+			<script>
+				var canvasCtx = document.getElementById("the-canvas").getContext("2d");
+
+				// Wheels
+				canvasCtx.fillStyle = "rgba(144,202,215,1)";
+				canvasCtx.moveTo(180, 200);
+				canvasCtx.arc(150, 200, 30, 0, Math.PI*2, false);
+				canvasCtx.moveTo(285, 200);
+				canvasCtx.arc(255, 200, 30, 0, Math.PI*2, false);
+				canvasCtx.fill();
+
+				// Main
+				canvasCtx.strokeStyle = "#000";
+				canvasCtx.moveTo(150,200);
+				canvasCtx.lineTo(200,200);
+				canvasCtx.moveTo(150,200);
+				canvasCtx.lineTo(190,160);
+				canvasCtx.lineTo(250,160);
+				canvasCtx.lineTo(200,200);
+				canvasCtx.lineTo(187,140);
+				canvasCtx.moveTo(175,140);
+				canvasCtx.lineTo(199,140);
+				canvasCtx.moveTo(210,200);
+				canvasCtx.arc(200, 200, 10, 0, Math.PI*2, false);
+				canvasCtx.moveTo(185,185);
+				canvasCtx.lineTo(193,193);
+				canvasCtx.moveTo(215,215);
+				canvasCtx.lineTo(207,207);
+				canvasCtx.moveTo(255, 200);
+				canvasCtx.lineTo(248, 138);
+				canvasCtx.moveTo(230, 142);
+				canvasCtx.lineTo(248, 138);
+				canvasCtx.lineTo(258, 127);
+
+				// Wheels
+				canvasCtx.moveTo(175, 200);
+				canvasCtx.arc(150, 200, 26, 0, Math.PI*2, false);
+				canvasCtx.moveTo(280, 200);
+				canvasCtx.arc(255, 200, 25, 0, Math.PI*2, false);
+				canvasCtx.moveTo(205,200);
+				canvasCtx.arc(200, 200, 5, 0, Math.PI*2, false);
+
+
+				canvasCtx.stroke();
+
+			</script>
+
+		</div>
+	
+	</body>
+</html>

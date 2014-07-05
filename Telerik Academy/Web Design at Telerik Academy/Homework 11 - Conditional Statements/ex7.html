@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 7</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var a = parseInt(window.prompt("Enter a"));
+			var b = parseInt(window.prompt("Enter b"));
+			var c = parseInt(window.prompt("Enter c"));
+			var d = parseInt(window.prompt("Enter d"));
+			var e = parseInt(window.prompt("Enter e"));
+			
+			if ( a > b && a > c && a > d && a > e ) {
+				alert("The greatest number of yours is " + a);
+			}
+			else if ( b > a && b > c && b > d && b > e ) {
+				alert("The greatest number of yours is " + b);
+			}
+			else if ( c > a && c > b && c > d && c > e ) {
+				alert("The greatest number of yours is " + c);
+			}
+			else if ( d > a && d > c && d > b && d > e ) {
+				alert("The greatest number of yours is " + d);
+			}
+			else if ( e > a && e > b && e > c && e > d ) {
+				alert("The greatest number of yours is " + e);
+			}
+			else {
+				alert("You entered two or more equals numbers");
+			}
+			
+		</script>
+			
+	</body>
+</html>

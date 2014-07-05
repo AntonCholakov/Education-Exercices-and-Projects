@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 3</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			// Defining the abstract class Shape with "calculateSurface" method in it
+			function Shape(width, height) {
+                var self = this;
+                self.width = width;
+                self.height = height;
+                self.calculateSurface = function(){}; // a method for calculating in next functions
+            }
+            
+			// Function for calculating the area of a rectangle
+            function Rectangle() {
+                var self = this;
+                Shape.apply(this, arguments);
+				var rectangleArea = self.width * self.height;
+                self.calculateSurface = function() {
+                    return rectangleArea;
+                }
+            }
+            Rectangle.prototype = new Shape();
+            Rectangle.prototype.constructor = Rectangle;
+            
+			// Function for calculation the area of a triangle
+            function Triangle() {
+                var self = this;
+                Shape.apply(this, arguments);
+				var triangleArea = (self.width + self.height) / 2;
+                self.calculateSurface = function() {
+                    return triangleArea;
+                }
+            }
+            Triangle.prototype = new Shape();
+            Triangle.prototype.constructor = Triangle;
+            
+			// Function for calculating the area of a circle
+            function Circle(radius) {
+                var self = this;
+                self.width = self.height = radius; // saving the radius as a variable
+				var circleArea = Math.PI * radius * radius;
+				self.calculateSurface = function() {
+                    return circleArea;
+                }
+            }
+            
+			// Inputing parameters for testing the functions
+            var rectangle = new Rectangle(9, 5);
+            var triangle = new Triangle(8, 3);
+            var circle = new Circle(8);
+            
+			// Entering the above in an array
+            var shapes = [rectangle, triangle, circle];
+            
+			// Loop checking all the elements in the array and writing the results from the above functions
+            for (var i in shapes) {
+                if(shapes.hasOwnProperty(i)){
+                    document.write(shapes[i].calculateSurface() + "<br>");
+                }
+            }
+						
+		</script>
+			
+	</body>
+</html>

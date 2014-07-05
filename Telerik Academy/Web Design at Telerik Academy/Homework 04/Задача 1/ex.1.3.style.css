@@ -1,0 +1,67 @@
+﻿#menu {
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+	color: #BBB9C4;
+	display:block;
+}
+
+li {
+	float: left;
+	background-color: #F1F1F1;
+	background-image: url("images/border.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	padding: 40px;
+	padding-bottom: 14px;
+	padding-right: 12px;
+}
+
+ul {
+	border: 18px groove #7F7F7F;
+	list-style-type: none;
+	width: 513px;
+	height: 73px;
+	padding-left: 1px;
+}
+
+li:first-child {
+	background-image: none;
+}
+
+.dashboard {
+	background-image: url("images/dashboard.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.tasks {
+	background-image: url("images/tasks.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.users {
+	background-image: url("images/users.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.reports {
+	background-image: url("images/reports.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.errorpages {
+	background-image: url("images/errorpages.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 6</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var a = parseInt(window.prompt("Enter a"));
+			var b = parseInt(window.prompt("Enter b"));
+			var c = parseInt(window.prompt("Enter c"));
+			var d;
+			var x1;
+			var x2;
+			
+			
+			d = b * b - 4 * a * c;
+			
+			if ( d > 0 ) {
+				x1 = (-b + Math.sqrt(d)) / 2 * a;
+				x2 = (-b - Math.sqrt(d)) / 2 * a;
+				alert("The real roots are " + x1 + " and " + x2);
+			}
+			else if ( d = 0 ) {
+				x1 = -b / (2 * a);
+				alert("The real root is " + x1);
+			}
+			else {
+				alert("The equation doesn't have real roots because D < 0")
+			}
+			
+		</script>
+			
+	</body>
+</html>

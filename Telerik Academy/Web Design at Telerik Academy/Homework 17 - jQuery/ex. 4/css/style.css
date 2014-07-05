@@ -1,0 +1,23 @@
+.input_text
+{
+    color:Blue
+}
+
+.current
+{
+    background-color:Lime
+}
+.module
+{
+    border:1px yellow solid
+}
+
+.excerpt
+{
+    font-style:italic;color:Green
+}
+
+.input_submit
+{
+    background-color:Red
+}

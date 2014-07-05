@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 1</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var first = parseInt(window.prompt("Enter first number"));
+			var second = parseInt(window.prompt("Enter second number"));
+			var tempThird;
+			
+			if(first > second){
+				tempThird = first;
+				first = second;
+				second = tempThird;
+				alert("Your numbers were exchanged.")
+			}
+			else{
+				alert("Your first number was smaller than the second one.");
+			}
+			
+		</script>
+			
+	</body>
+</html>

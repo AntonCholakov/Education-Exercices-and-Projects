@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title> Exercise 3 </title>
+		<style>
+			table{
+				border-collapse:collapse;
+				width:480px;
+			}
+			label{
+				float:right;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<table border="1" cellpadding=2px align="center">
+				<colgroup>
+				<col style = "width:35%"/>
+				</colgroup>
+
+					<tr>
+						<td> <label for="lastname"> Last Name <label></td>
+						<td> <input type="text" name="lastname" id="lastname" size="40" placeholder="Nakov" /> </td>
+					</tr>
+					<tr>
+						<td> <label for="firstname"> First name </label> </td>
+						<td> <input type="text" name="firstname" id="firstname" size="40" placeholder="Svetlin" /> </td>
+					</tr>
+					<tr>
+						<td> <label for="address"> Address </label> </td>
+						<td> <textarea name="address" id="address" cols="30" rows="3" placeholder="17 Hristo Botev Str. floor 3, apt. 12"></textarea></td>
+					</tr>
+					<tr>
+						<td> <label for="city"> City </label> </td>
+						<td> <input type="text" name="city" id="city" size="20" placeholder="Kaspichan" />
+						<span for="state"> State </span> <input type="text" name="state" id="state" size="8" /> </td>
+					</tr>
+					<tr>
+						<td> <label for="code"> ZIP/Postal Code </label> </td>
+						<td> <input type="text" name="code" id="code" size="10" placeholder="9325" /> </td>
+					</tr>
+					<tr>
+						<td> <label for="country"> Country </label> </td>
+						<td> <select size="1" name="country" id="country">
+								<option>Bulgaria</option>
+								<option>USA</option>
+								<option>Other</option> 
+							 </select>
+						</td>
+					</tr>
+					<tr>
+						<td> <label for="countrycode"> Phone (country code, area code, number) </label> </td>
+						<td> (+<input type="text" name="countrycode" id="countrycode" size="5" placeholder="359" />)
+						<input type="text" name="areacode" id="areacode" size="5" placeholder="88" />-
+						<input type="text" name="number" id="number" size="10" placeholder="8334343" />
+						</td>
+					</tr>
+					<tr>
+						<td> <label for="email"> E-mail </label> </td>
+						<td> <input type="text" name="email" id="email" size="40" pattern="[^ @]*@[^ @]*.[^ @]" placeholder="nakov@kaspichan.org"/> </td>
+					</tr>
+					<tr>
+						<td> <label for="month"> Birth date </label> </td>
+						<td> Month <input type="text" name="month" id="month" size="1" placeholder="01" /> 
+						Day <input type="text" name="day" id="day" size="1" placeholder="01" /> 
+						Year (4 Digit) <input type="text" name="year" id="year" size="1" placeholder="1980" />
+						</td>
+					</tr>
+					<tr>
+						<td> <label for="gender"> Gender </label> </td>
+						<td> <select size="1" name="gender" id="gender">
+								<option>Male</option>
+								<option>Female</option>
+							 </select>
+						</td>
+					</tr>
+					<tr>
+						<td> <label for="spring"> Starting date </label> </td>
+						<td> <input type="radio" name="r1" id="spring" checked /> Spring 2006
+							 <input type="radio" name="r1" id="summer" /> Summer 2006
+						</td>
+					</tr>
+					<tr>
+						<td> <label for="comments"> Comments/Questions </label> </td>
+						<td> <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Please send me more information about the lodging"></textarea> </td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center" bgcolor=#DDFFFF> <input type="submit" value="Submit" name="submit" />
+										 <input type="reset" value="Clear this form" name="reset" />
+						</td>
+					</tr>
+			</table>
+		</form>
+	</body>
+</html>
+			

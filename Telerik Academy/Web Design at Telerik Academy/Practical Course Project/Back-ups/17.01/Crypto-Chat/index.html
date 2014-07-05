@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crypto-Chat</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/sha1.js"></script>
+		<script type="text/javascript" src="js/gibberish-aes.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script>
+			$(document).ready(onDocumentReady);
+		</script>
+	</head>
+	<body>
+	
+		<header id="header">
+			<div id="header-main">
+				<div id="logo">
+				  <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+				</div>
+				
+				<div id="login-reg">
+					<a href="#" id="login-button">Login</a>
+
+					<a href="#" id="reg-button">Registration</a>
+					
+					<div class="log-reg-box" id="login">
+						<form>
+						
+							<label for="log-name">Name:</label><br>
+							<input type="text" id="log-name" required="required" /><br>
+						
+							<label for="log-password">Password:</label><br>
+							<input type="password" id="log-password" required="required" />
+						
+							<input type="submit" id="log-btn" value="Login" />
+							
+						</form>
+					</div>
+					
+					<div class="log-reg-box" id="reg">
+						<form>
+						
+							<label for="reg-name">Name:</label><br>
+							<input type="text" id="reg-name" required="required" /><br>
+						
+							<label for="reg-password">Password:</label><br>
+							<input type="password" id="reg-password" required="required" />
+						
+							<input type="submit" id="reg-btn" value="Registration" />
+							
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</header>
+	
+		<div id="main-part">
+			
+			<p>Welcome to the new chat!</p>
+			<p>You should make an account or login to chat!</p>
+			<div id="arrow"></div>
+
+		</div>
+		
+		<div id="server-message-central-holder">
+			<div id="server-message-central"></div>
+		</div>
+		
+		<div id="server-message-holder">
+			<div id="server-message"></div>
+		</div>
+		
+		<footer id="footer">
+		
+			<p>Designed by <a href="http://antonik-dev.eu" target="_blank">Antonik Team</a></p>
+		
+		</footer>
+		
+	</body>
+</html>

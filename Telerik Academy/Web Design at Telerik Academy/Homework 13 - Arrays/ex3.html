@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 3</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			var length = 1;
+			var longest = 0;
+			
+			// Inputing elements in the array and checking for repeating
+			for (var i = 0; i < array.length; i++) {
+				array[i] = window.prompt("Enter an element of the array");
+				if (array[i] == array[i-1]) {
+					length++;
+				}
+				// Checker for avoiding overwriting
+				if (length > longest) {
+					longest = length;
+					length = 1; // for starting again the loop from 1 
+				}
+			}
+			// Output message
+			alert("The maximum repeating elements in your inputed array are " + longest);
+            
+		</script>
+			
+	</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 3</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var a = parseInt(window.prompt("Enter a number or press enter to see the biggest and the smallest number so far"));
+
+			var min = a;
+			var max = a;
+			var countChecker = 0;
+				
+			while (a) {
+					
+				a = parseInt(window.prompt("Enter a number or press enter to see the biggest and the smallest number so far"));
+								
+				if (a > max) {
+					max = a;
+				}
+				if (a < min) {
+					min = a;
+				}
+					
+				countChecker++;
+				
+			}
+			
+			if (countChecker == 0) {
+				alert("You should input some numbers");
+			}
+			else {
+				alert("Min number is " + min + " and the max number is " + max);
+			}
+			
+		</script>
+			
+	</body>
+</html>

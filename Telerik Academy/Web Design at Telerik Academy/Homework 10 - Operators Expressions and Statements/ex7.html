@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 7</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = window.prompt("Enter your number (1 to 100)");
+			var tempCounter = 0;
+			
+			if ( number < 1 || number > 100) {
+				alert("Your number is not in the interval 1-100");
+			}
+			else {
+			
+				for (var i = 1; i<=100; i++) {
+					if( number % i == 0 ) {
+						tempCounter = tempCounter + 1;
+					}
+				}
+				
+				if(tempCounter == 2 | tempCounter == 1) {
+					alert("Your number is prime");
+				}
+				else {
+					alert("Your number is not a prime");
+				}
+				
+			}
+			
+		</script>
+			
+	</body>
+</html>

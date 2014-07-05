@@ -1,0 +1,33 @@
+﻿body {
+	font-family: sans-serif;
+}
+
+h1 {
+	color: #A8A8AA;
+	margin-bottom: 4px;
+}
+
+a {
+	color: #69C3DD;
+}
+
+input {
+	font-size: 38px;
+	border-radius: 3px;
+	padding-left: 8px;
+	margin-bottom: 18px;
+}
+
+.submit_button {
+	background-image: url("images/login.png");
+	background-repeat: no-repeat;
+	background-size: 150px 47px;
+	width: 150px;
+	margin-left: 150px;
+}
+
+#login-form {
+	width: 460px;
+	border: 9px ridge #7496AA;
+	border-radius: 4px;
+}

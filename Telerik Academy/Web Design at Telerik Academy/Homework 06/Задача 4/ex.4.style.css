@@ -1,0 +1,151 @@
+﻿@-webkit-keyframes move {
+	0% {
+		position: relative;
+		color: #669933;
+	}
+	20% {
+		position: relative;
+			top: -250px;	
+		color: #669933;
+	}
+	32% {
+		position: relative;
+			top: 0px;
+		color: #color: #84B615;
+	}
+	58% {
+		position: relative;
+			top: -150px;	
+		color: #color: #84B615;
+	}
+	75% {
+		position: relative;
+			top: 0px;	
+		color: #669933;
+	}
+	85% {
+		position: relative;
+			top: -82px;	
+		color: #84B615;
+	}
+	91% {
+		position: relative;
+			top: 0px;	
+		color: #84B615;
+	}
+	94% {
+		position: relative;
+			top: -42px;	
+		color: #84B615;
+	}
+	96% {
+		position: relative;
+			top: 0px;	
+		color: #84B615;
+	}
+	98% {
+		position: relative;
+			top: -22px;	
+		color: #84B615;
+	}
+	100% {
+		position: relative;
+			top: 0px;	
+		color: #669933;
+	}
+}
+
+@-moz-keyframes move {
+	0% {
+		position: relative;
+		color: #669933;
+	}
+	20% {
+		position: relative;
+			top: -250px;	
+		color: #669933;
+	}
+	32% {
+		position: relative;
+			top: 0px;
+		color: #color: #84B615;
+	}
+	58% {
+		position: relative;
+			top: -150px;	
+		color: #color: #84B615;
+	}
+	75% {
+		position: relative;
+			top: 0px;	
+		color: #669933;
+	}
+	85% {
+		position: relative;
+			top: -82px;	
+		color: #84B615;
+	}
+	91% {
+		position: relative;
+			top: 0px;	
+		color: #84B615;
+	}
+	94% {
+		position: relative;
+			top: -42px;	
+		color: #84B615;
+	}
+	96% {
+		position: relative;
+			top: 0px;	
+		color: #84B615;
+	}
+	98% {
+		position: relative;
+			top: -22px;	
+		color: #84B615;
+	}
+	100% {
+		position: relative;
+			top: 0px;	
+		color: #669933;
+	}
+}
+
+#space {
+	position: relative;
+		top: 200px;	
+	width: 106px;
+	height: 38px;
+	border: 1px solid green;
+}
+
+#animationText {
+	position: relative;
+		left: 6px;
+		top: 266px;
+	height: 60px;
+	width: 100px;
+	color: #84B615;
+	font-size: 32px;
+	z-index: 2;
+}
+		 
+#animationText #box {
+	position: relative;
+	height:25px;
+	width:50px;
+	z-index: 1;
+}
+		 
+#animationText:hover #box, #animationDemo.hover_effect #box {
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: move;
+	-moz-animation-duration: 4s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;	
+}

@@ -1,0 +1,99 @@
+﻿body {
+	font-family: sans-serif;
+}
+
+a {
+	color: #629202;
+}
+
+hr {
+	width: 320px;
+	margin-left: -30px;
+	margin-top: 33px;
+}
+
+#slide {
+	background-image: url('images/background4.png');
+	width: 667px;
+	height: 501px;
+}
+
+#css-logo {
+	background-image: url('images/css-logo.png');
+	background-repeat: no-repeat;
+	background-position: 160px 36px;
+	margin-left: -20px;
+	height: 180px;
+}
+
+#code {
+	background-image: url('images/code.gif');
+	background-repeat: no-repeat;
+	margin-left: 350px;
+	margin-top: -146px;
+	height: 183px;
+}
+
+#css-folder {
+	background-image: url('images/css-folder.png');
+	background-repeat: no-repeat;
+	margin-left: 46px;
+	margin-top: -24px;
+	height: 180px;
+}
+
+#title {
+	font-size: 34px;
+	font-weight: bold;
+	color: #D4FF5B;
+	text-shadow: 0px 30px 0px #404631;
+	margin-left: 350px;
+	margin-top: -146px;
+	height: 180px;
+}
+
+#text {
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: -54px;
+	height: 180px;
+}
+
+.name {
+	font-size: 26px;
+	color: #C9FBA3;
+}
+
+.trainer {
+	font-size: 24px;
+	color: #689001;
+}
+
+.site {
+	font-size: 22px;
+}
+
+.web-design-course {
+	font-size: 20px;
+	color: #90D3C4;
+}
+
+.telerik-com {
+	font-size: 18px;
+}
+
+#css2 {
+	background-image: url('images/css2.png');
+	background-repeat: no-repeat;
+	margin-left: 310px;
+	margin-top: -190px;
+	height: 140px;
+}
+
+#telerik-logo {
+	background-image: url('images/telerik-logo.png');
+	background-repeat: no-repeat;
+	margin-left: 480px;
+	margin-top: -130px;
+	height: 140px;
+}

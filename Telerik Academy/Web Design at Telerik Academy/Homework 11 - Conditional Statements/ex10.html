@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 10</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter a number between 0 and 999"));
+			var prefix1;
+			var prefix2;
+			var lastDigit;
+			
+			if ( number < 0 || number > 999 ) {
+				alert("You entered a number which is not between 0 and 999");
+			}
+
+			switch (Math.floor(number / 100)) 
+			{
+				case 1: prefix1 = "One hundred"; break;
+				case 2: prefix1 = "Two hundred"; break;
+				case 3: prefix1 = "Three hundred"; break;
+				case 4: prefix1 = "Four hundred"; break;
+				case 5: prefix1 = "Five hundred"; break;
+				case 6: prefix1 = "Six hundred"; break;
+				case 7: prefix1 = "Seven hundred"; break;
+				case 8: prefix1 = "Eight hundred"; break;
+				case 9: prefix1 = "Nine hundred"; break;
+			}
+			
+			switch (Math.floor((number%100) / 10))
+			{					
+				case 1:
+					switch (Math.floor((number%100) % 10))
+					{
+						case 0: prefix2 ="Ten"; break;
+						case 1: prefix2 ="Eleven"; break;
+						case 2: prefix2 ="Twelve"; break;
+						case 3: prefix2 ="Thirteen"; break;
+						case 4: prefix2 ="Fourteen"; break;
+						case 5: prefix2 ="Fifteen"; break;
+						case 6: prefix2 ="Sixteen"; break;
+						case 7: prefix2 ="Seventeen"; break;
+						case 8: prefix2 ="Eighteen"; break;
+						case 9: prefix2 ="Nineteen"; break;
+					}
+				break;
+				case 2: prefix2 ="Twenty"; break;
+				case 3: prefix2 ="Thirty"; break;
+				case 4: prefix2 ="Forty"; break;
+				case 5: prefix2 ="Fifty"; break;
+				case 6: prefix2 ="Sixty"; break;
+				case 7: prefix2 ="Seventy"; break;
+				case 8: prefix2 ="Eighty"; break;
+				case 9: prefix2 ="Ninety"; break;
+			}
+			
+			switch (Math.floor((number%100) % 10))
+				{
+					case 1: lastDigit="One"; break;
+					case 2: lastDigit="Two"; break;
+					case 3: lastDigit="Three"; break;
+					case 4: lastDigit="Four"; break;
+					case 5: lastDigit="Five"; break;
+					case 6: lastDigit="Six"; break;
+					case 7: lastDigit="Seven"; break;
+					case 8: lastDigit="Eight"; break;
+					case 9: lastDigit="Nine"; break;
+					default: lastDigit = 0; break;
+				}
+				
+			if (number > 100 && (number % 100 != 0) ) {
+				alert("Your number is " + prefix1 + " and " + prefix2 + " " + lastDigit);
+			}
+			else if (number % 100 == 0) {
+				alert("Your number is " + prefix1);
+			}
+			else if (number < 100 && (((number % 100) % 10) == 0 )) {
+				alert("Your number is " + prefix2);
+			}
+			else if (number < 100 && (((number % 100) % 10) != 0 )) {
+				alert("Your number is " + prefix2 + " " + lastDigit);
+			}
+			else {
+				alert("Your number is Zero");
+			}
+			
+		</script>
+			
+	</body>
+</html>

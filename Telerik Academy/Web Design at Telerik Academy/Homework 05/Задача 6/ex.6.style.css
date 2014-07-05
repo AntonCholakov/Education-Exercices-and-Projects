@@ -1,0 +1,155 @@
+body {
+	font: 14px/20px "Segoe UI", "Arial", sans-serif;
+}
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	background: #000000;
+}
+
+ul.menu:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+li.menu-item {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	color: #000000;
+	background-color: #cccccc;
+	float: left;
+}
+
+li.menu-item:hover {
+	background-color: #eeeeee;
+}
+
+li.menu-item.selected{
+	background-color: #ffffff;
+}
+
+li.menu-item a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#middle {
+}
+
+#middle:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#middle #content {
+	margin-left: 30%;
+	width: 70%;
+	float: left;
+}
+
+#middle #sidebar {
+	margin-left: -100%;
+	width: 20%;
+	float: left;
+}
+
+#sidebar {
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-color: #cccccc;
+	box-sizing: border-box;
+}
+
+#sidebar .avatar {
+
+}
+
+#sidebar .avatar img {
+	width: 100%;
+	display: block;
+}
+
+#sidebar .social-links {
+	margin: 10px 0 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#sidebar .social-links li {
+	margin: 0 10px;
+	width: 16px;
+	display: inline-block;
+}
+
+#sidebar .social-links a {
+	height: 16px;
+	width: 16px;
+	background-image: url("http://academy.telerik.com/Sitefinity/WebsiteTemplates/MyTemplate/App_Themes/Academy/Images/sprite-no-repeat.png");
+	background-repeat: no-repeat;
+	background-position: -9999em;
+	text-indent: -999em;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#sidebar .social-links .twitter {
+	background-position: 0 -32px;
+}
+
+#sidebar .social-links .facebook {
+	background-position: 0 -16px;
+}
+
+#sidebar .social-links .linkedin {
+	background-position: 0 -48px;
+}
+
+#sidebar .social-links .website {
+	background-position: 0 -64px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+.gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.gallery li {
+	margin: 0 10px 10px 0;
+	width: 100px;
+	min-height: 100px;
+	float: left;
+	overflow: visible;
+	position: relative;
+	z-index: 1;
+}
+
+.pc_img {
+	width: 90px;
+	height: 140px;
+	border: 0;
+}
+
+.gallery li:hover {
+	z-index: 2;
+}
+
+.gallery li:hover img {
+	position: absolute;
+		top: -50%;
+		left: -50%;
+	width: 200%;
+	height: 240%;
+}

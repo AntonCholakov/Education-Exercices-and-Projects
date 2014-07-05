@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			//Write a script that finds the maximal increasing sequence in an array.
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			var length = 1;
+			var longest = 0;
+			
+			for (var i = 0; i < array.length; i++) {
+				array[i] = window.prompt("Enter an element of the array");
+			}
+			
+			for (var i = 0; i < array.length; i++) {
+				if (array[i+1] - array[i] == 1) {
+					length++;
+				}
+				else {
+					length = 1;
+				}
+				if (length > longest) {
+					longest = length;
+				}
+			}
+
+			alert("The maximum increasing elements in your inputed array are " + longest);
+            
+		</script>
+			
+	</body>
+</html>

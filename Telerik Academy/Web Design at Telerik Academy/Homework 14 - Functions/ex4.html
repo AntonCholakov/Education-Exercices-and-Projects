@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter your number"));
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			
+			for(var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter a number of your array"));
+			}
+			
+			function numberInArray(number, array) {
+				
+				counter = 0;
+			
+				for(var i = 0; i < array.length; i++) {
+					if (array[i] == number) {
+						counter++;
+					}
+				}
+				
+				document.write("Your number (" + number + ") appears " + counter + " times in your array");
+			}
+			
+			numberInArray(number, array);
+			
+		</script>
+			
+	</body>
+</html>

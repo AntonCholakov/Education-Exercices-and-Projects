@@ -1,0 +1,56 @@
+﻿@-webkit-keyframes pulsing {
+	0% {
+		font-size: 20px;
+		color: yellow;
+		text-shadow: 0 0 16px rgba(22, 220, 20, 1.0), 0 0 36px rgba(0, 140, 255, 1.0);
+	}
+	50% {
+		color: #FFF;
+	}
+	100% {
+		font-size: 37px;
+		color: red;
+	}
+}
+@-moz-keyframes pulsing {
+	0% {
+		font-size: 20px;
+		color: yellow;
+		text-shadow: 0 0 16px rgba(22, 220, 20, 1.0), 0 0 36px rgba(0, 140, 255, 1.0);
+	}
+	50% {
+		color: #FFF;
+	}
+	100% {
+		font-size: 37px;
+		color: red;
+	}
+}
+
+#pulsingText {
+	width: 400px;
+}
+
+#pulsingText div {
+	width: 400px;
+	height: 35px; 
+	font-size:18px;
+	color: #000; 
+	text-shadow: rgba(20, 20, 20, 0.3) 1px 3px 5px;
+	text-align: center; 
+}
+
+#pulsingText div:hover, #pulsingText div.hover_effect  {
+	-webkit-animation-name: pulsing;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;	
+	
+	-moz-animation-name: pulsing;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+}	
+

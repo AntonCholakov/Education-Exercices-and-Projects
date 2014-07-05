@@ -1,0 +1,289 @@
+﻿#picture {
+	border: 1px solid;
+	width: 900px;
+	height: 550px;
+}
+
+#sky {
+	height: 50%;
+	background: -webkit-linear-gradient(top, #649ee0 0%,#9ac5e8 38%,#b6d8f2 100%);
+	background: -moz-linear-gradient(top, #649ee0 0%, #9ac5e8 38%, #b6d8f2 100%);
+}
+
+#sea {
+	height: 50%;
+	background: -webkit-linear-gradient(top, #207cca 35%,#207cca 43%,#1e5799 100%);
+	background: -moz-linear-gradient(top, #207cca 35%,#207cca 43%,#1e5799 100%);
+}
+
+#mountain1 {
+	position: relative;
+		left: 30px;
+		top: 140px;
+	width: 800px;
+	height: 600px;
+	background-image: url('mountain.png');
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+#sun {
+	position: relative;
+		left: 150px;
+		top: -440px;
+	border: 1px solid yellow;
+	background-color: yellow;
+	border-radius: 40px;
+	width: 80px;
+	height: 80px;
+	z-index: 1;
+}
+
+#mountain2 {
+	position: relative;
+		left: 350px;
+		top: -12px;
+	width: 800px;
+	height: 600px;
+	background-image: url('mountain.png');
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+
+#mountain3 {
+	position: absolute;
+		left: 550px;
+		top: 189px;
+	width: 800px;
+	height: 600px;
+	background-image: url('mountain.png');
+	background-repeat: no-repeat;
+	z-index: 5;
+}
+
+#shipOne {
+	position: relative;
+		left: 620px;
+		top: -420px;
+	background-image: url('ship.png');
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 69px;
+	z-index: 4;
+}
+
+#shipTwo {
+	position: relative;
+		left: 630px;
+		top: -700px;
+	background-image: url('ship.png');
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 69px;
+	z-index: 4;
+}
+
+#sun {
+	-webkit-animation-name: moveSun;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: moveSun;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;	
+}
+
+@-webkit-keyframes moveSun {
+	0% {
+		position: relative;
+	}
+
+	50% {
+		position: relative;
+			top: -580px;
+			left: 440px;
+	}
+
+	100% {
+		position: relative;
+			top: -410px;	
+			left: 660px;
+	}
+}
+@-moz-keyframes moveSun {
+	0% {
+		position: relative;
+	}
+
+	50% {
+		position: relative;
+			top: -580px;
+			left: 440px;
+	}
+
+	100% {
+		position: relative;
+			top: -410px;	
+			left: 660px;
+	}
+}
+
+#shipOne {
+	-webkit-animation-name: moveShipOne;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: moveShipOne;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;
+}
+
+@-webkit-keyframes moveShipOne {
+	0% {
+		position: absolute;
+	}
+
+	25% {
+		position: absolute;
+			top: -480px;
+			left: 20px;
+	}
+	50% {
+		position: absolute;
+			top: -650px;	
+			left: 420px;
+	}
+	100% {
+		position: absolute;
+			top: -540px;	
+			left: 120px;
+	}
+}
+@-moz-keyframes moveShipOne {
+	0% {
+		position: absolute;
+	}
+
+	25% {
+		position: absolute;
+			top: -480px;
+			left: 20px;
+	}
+	50% {
+		position: absolute;
+			top: -650px;	
+			left: 420px;
+	}
+	100% {
+		position: absolute;
+			top: -540px;	
+			left: 120px;
+	}
+}
+
+#shipTwo {
+	-webkit-animation-name: moveShipTwo;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: moveShipTwo;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;
+}
+
+@-webkit-keyframes moveShipTwo {
+	0% {
+		position: absolute;
+	}
+
+	20% {
+		position: absolute;
+			top: -640px;
+			left: 100px;
+	}
+	65% {
+		position: absolute;
+			top: -610px;	
+			left: 770px;
+	}
+	100% {
+		position: absolute;
+			top: -510px;	
+			left: 620px;
+	}
+}
+
+@-moz-keyframes moveShipTwo {
+	0% {
+		position: absolute;
+	}
+
+	20% {
+		position: absolute;
+			top: -620px;
+			left: 100px;
+	}
+	65% {
+		position: absolute;
+			top: -616px;	
+			left: 770px;
+	}
+	100% {
+		position: absolute;
+			top: -510px;	
+			left: 620px;
+	}
+}
+
+#bird {
+	position: absolute;
+		left: 620px;
+		top: 20px;
+	background-image: url('bird.png');
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 84px;
+	z-index: 2;
+}
+
+#bird {
+	-webkit-animation-name: moveBird;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: moveBird;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;
+}
+
+@-webkit-keyframes moveBird {
+	0% {
+		position: absolute;
+	}
+
+	100% {
+		position: absolute;
+			top: 40px;
+			left: 100px;
+	}
+}
+
+@-moz-keyframes moveBird {
+	0% {
+		position: absolute;
+	}
+
+	100% {
+		position: absolute;
+			top: 40px;
+			left: 100px;
+	}
+}

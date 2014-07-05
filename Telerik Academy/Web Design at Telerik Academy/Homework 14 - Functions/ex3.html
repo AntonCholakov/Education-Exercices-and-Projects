@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 3</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter your number"));
+			
+			function lastDigit(number) {
+				switch (number % 10)
+				{
+					case 0: document.write("The last digit of your number is Zero"); break;
+					case 1: document.write("The last digit of your number is One"); break;
+					case 2: document.write("The last digit of your number is Two"); break;
+					case 3: document.write("The last digit of your number is Three"); break;
+					case 4: document.write("The last digit of your number is Four"); break;
+					case 5: document.write("The last digit of your number is Five"); break;
+					case 6: document.write("The last digit of your number is Six"); break;
+					case 7: document.write("The last digit of your number is Seven"); break;
+					case 8: document.write("The last digit of your number is Eight"); break;
+					case 9: document.write("The last digit of your number is Nine"); break;
+					default: document.write("Error"); break;
+				}
+			}
+			
+			lastDigit(number);
+			
+		</script>
+			
+	</body>
+</html>

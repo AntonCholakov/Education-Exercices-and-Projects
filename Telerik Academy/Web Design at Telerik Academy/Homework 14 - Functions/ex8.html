@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 8</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			function addingNumbers(){
+				var a = window.prompt("Enter your first number");
+				a=a.toString(); // converting the integer to string
+				var b = window.prompt("Enter your second number");
+				b=b.toString(); // converting the integer to string
+				
+				firstLength = a.length;
+				secondLength = b.length;
+				// ^ variables for string's/arrays length
+				
+				var firstArray= new Array;
+				var secondArray= new Array;
+				
+				for(var i=0; i<firstLength; i++){
+					var n=a.substr(i,1);
+					n=parseInt(n);
+					firstArray.push(n);
+				}
+				for(var i=0; i<secondLength; i++){
+					var n=b.substr(i,1);
+					n=parseInt(n);
+					secondArray.push(n);
+				}
+				// ^ creating arrays for the 2 strings
+
+				firstArray.reverse();
+				secondArray.reverse();
+				// ^ Reversing for start calculating from the last digit
+
+				if (firstLength<secondLength){
+					var longerLength=secondLength;
+					var smallerLength=firstLength;
+				}
+				else {
+					var longerLength=firstLength;
+					var smallerLength=secondLength;
+				}
+				// ^ Finding which one array is longer and saving their lengths
+		
+				var result = new Array; // This one array will be the last one with the result
+				
+				var x=0; // X will remember the remainded part from the division
+				for (i=0; i<smallerLength; i++) {
+					result[i] = (firstArray[i] + secondArray[i]+x) % 10 ;
+					x = Math.floor((firstArray[i] + secondArray[i]+x) / 10);
+				}
+
+				if (firstArray.length>secondArray.length){
+					for (i; i<longerLength; i++) {
+						result[i] = firstArray[i]+x;
+						x = 0;
+					}
+				
+					result.reverse(); // Reversing the number we get after calculating
+					document.write(result.join(""));
+				}
+				else if (firstArray.length<secondArray.length){
+					for (i; i<longerLength; i++) {
+						result[i] = secondArray[i]+x;
+						x = 0;
+					}
+					
+					result.reverse();
+					document.write(result.join(""));
+				}
+				else {
+					if(x != 0){
+						result[i+1]=x;
+					}
+					
+					result.reverse();
+					document.write(result.join(""));
+				}
+			}
+
+			addingNumbers();
+						
+		</script>
+			
+	</body>
+</html>

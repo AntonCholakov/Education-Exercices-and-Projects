@@ -1,0 +1,130 @@
+﻿#calculator {
+	background-color: #D9E4F1;
+	width: 430px;
+	background-image: url('images/calculator-image.png');
+	background-repeat: no-repeat;
+	background-position: 6px 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+#main-table {
+	border: 1px solid;
+	background-color: #D9E4F1;
+}
+
+tr#menu td {
+	background-image: url('images/menu-background.png');
+	width: 410px;
+	height: 22px;
+}
+
+#header {
+	padding-left: 20px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#out-screen {
+	text-align: center;
+}
+
+#out-screen input {
+	background-image: url('images/display-background.png');
+	text-align: right;
+	font-size: 18px;
+	letter-spacing: 1px;
+	width: 413px;
+	height: 40px;
+}
+
+.binary-values {
+	border: 1px solid #CCC;
+	width: 416px;
+	margin-left: 2px;
+}
+
+.binary {
+	color: #736577;
+}
+
+.decimal {
+	color: #958787;
+}
+
+.right-align {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.radiobuttons {
+	border: 1px solid #CCC;
+	font-size: 14px;
+}
+
+.activ input:hover {
+	border-color: #F4D92E;
+	background-image: url('images/hover.png');
+}
+
+.activ input{
+	background-image: url('images/activ-background.png');
+	border-radius: 3px;
+	width: 40px;
+	height: 36px;
+}
+
+.unactiv input{
+	background-color: #D9E4F1;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	width: 40px;
+	height: 36px;
+}
+
+
+.darker-activ input:hover {
+	border-color: #F4D92E;
+	background-image: url('images/darker-hover.png');
+}
+
+.darker-activ input {
+	background-color: #D4E0ED;
+	border-radius: 3px;
+	width: 40px;
+	height: 36px;
+}
+
+.numbers input:hover {
+	border-color: #F4D92E;
+	background-image: url('images/hover.png');
+}
+
+.numbers input {
+	background-image: url('images/numbers-background.png');
+	border-radius: 3px;
+	width: 40px;
+	height: 36px;
+}
+
+#zero {
+	width: 84px;
+	height: 36px;
+}
+
+#equal {
+	background-image: url('images/activ-background1.png');
+	width: 40px;
+	height: 74px;
+}
+
+#equal:hover {
+	border-color: #F4D92E;
+	background-image: url('images/hover-equal.png');
+}
+
+#equal:activ {
+	border-color: #F4D92E;
+	background-color: red;
+}

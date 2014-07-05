@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 6</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+	<!-- Write a script that, for a given two integer numbers N and X, calculates the sum <br> S = 1 + 1!/X + 2!/X2 + … + N!/X^N -->
+		<script type="text/javascript">
+			
+			var n = parseInt(window.prompt("Enter N"));
+			var x = parseInt(window.prompt("Enter x"));
+			var iFact = 1;
+			var sum = 1;
+			var i = 1;
+			
+			for ( i; i <= n; i++ ) {
+				
+				var j = i;
+			
+				do {
+					iFact *= j;
+					j--;
+				} while(j>0);
+				
+				sum = sum + iFact / Math.pow(x,i);
+				iFact = 1;
+			}
+			
+			alert("The result of 1 + 1!/X + 2!/X^2 + ... + N!/X^N with N=" + n + " and X=" + x + " is " + sum);
+		</script>
+			
+	</body>
+</html>

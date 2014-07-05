@@ -1,0 +1,64 @@
+﻿a {
+	color: #226A42;
+	font-size: 12px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h2 {
+	margin-left: 6px;
+}
+
+#main {
+	border: 3px double #666666;
+	border-radius: 18px;
+	width: 710px;
+}
+
+#player-table {
+	width: 642px;
+	background-color: #2277FF;
+	border: 20px solid #2277FF;
+	border-radius: 7px;
+	margin-left: 9px;
+	margin-bottom: 20px;
+	margin-right: 14px;
+}
+
+td#episodes-list ul {
+	padding-left: 12px;
+    overflow: auto;
+    white-space: nowrap;    
+    width: 150px;
+    height: 180px;
+}
+
+td#buttons ul li {
+	float: left;
+	margin-right: 18px;
+}
+
+td#slider input {
+	width: 300px;
+}
+
+td#time span {
+	font-size: 14px;
+}
+
+td#volume input {
+	width: 90px;
+}
+
+#video {
+	background-image: url('images/movie.jpg');
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 323px;
+}
+
+#episodes-list {
+	padding-left: 10px;
+}

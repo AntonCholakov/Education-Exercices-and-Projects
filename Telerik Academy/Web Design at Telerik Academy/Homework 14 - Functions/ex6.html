@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 6</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			
+			for(var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter a number of your array"));
+			}
+						
+			function compareInArray(array) {
+				
+				for(var i = 1; i <= array.length; i++) {
+					if(array[i] > array[i - 1] && array[i] > array[i + 1]) {
+						return i;
+					}
+				}
+				return -1;
+			}
+			
+			document.write("The first number of your array which is bigger than the previous and the next one is at the position " + compareInArray(array));
+			
+		</script>
+			
+	</body>
+</html>

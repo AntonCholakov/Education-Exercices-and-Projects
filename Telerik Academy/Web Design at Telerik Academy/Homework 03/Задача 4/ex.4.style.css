@@ -1,0 +1,118 @@
+body {
+	font-family: sans-serif;
+}
+
+table {
+	width: 550px;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	border-spacing: 0;
+}
+
+td {
+	border: 1px solid #CCC;
+	height: 60px;
+	color: #CCC;
+	vertical-align: top;
+}
+
+ul {
+	list-style-type: none;	
+}
+
+.days {
+	text-align: right;
+	vertical-align: top;
+}
+
+.days:hover {
+	background-color: #FFFFCD;
+}
+
+tr.days-of-week td {
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+	width: 70px;
+	height: 8px;
+}
+
+tr.days-of-week td:hover {
+	background-color: #FFF;
+}
+
+#left-part {
+	border-right: none;
+}
+
+#right-part {
+	border-left: none;
+}
+
+#header {
+	border: 1px solid #D7D7D7;
+	background-color: #E0E0E0;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7F868E;
+	width: 710px;
+	height: 28px;
+}
+
+#calendar {
+	padding-left: 4px;
+	border: none;
+}
+
+#calendar-head {
+	border: 1px solid #D7D7D7;
+	border-radius: 2px;
+	background-color: #E0E0E0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7F868E;
+	height: 28px;
+}
+
+#nav-buttons {
+	padding-left: 6px;
+}
+
+#mwk-buttons {
+	padding-left: 318px;
+}
+
+#aside-header {
+	border: 1px solid #D7D7D7;
+	border-radius: 2px;
+	background-color: #E0E0E0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7F868E;
+	width: 150px;
+	height: 28px;
+	margin-left: -6px;
+	margin-right: -6px;
+	margin-top: -14px;
+}
+
+#aside-nav {
+	border: 1px solid #D7D7D7;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ul#aside-nav input {
+	border-radius: 5px;
+	background-color: #32A4CC;
+	color: #FFF;
+	width: 140px;
+	height: 30px;
+}

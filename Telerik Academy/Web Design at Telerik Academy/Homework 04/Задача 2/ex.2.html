@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+ 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Exercise 2 </title>
+		<link rel="stylesheet" href="ex.2.style.css">
+	</head>
+	
+	<body>
+		<form>
+			<div id="main">
+			
+				<h2> Web design	Video Player </h2>
+				
+				<table id="player-table">
+					
+					<tr>
+						
+						<td id="video">
+						</td>
+						
+						<td id="episodes-list">
+						<ul>
+							<li><a href="#" title="Watch Episode I!">Episode I - Phantom Manace</a></li>
+							<li><a href="#" title="Watch Episode II!">Episode II - Attack of the Clones</a></li>
+							<li><a href="#" title="Watch Episode III!">Episode III - Revenge of the Sith</a></li>
+							<li><a href="#" title="Watch Episode IV!">Episode IV - New Hope</a></li>
+							<li><a href="#" title="Watch Episode V!">Episode V - The Empire strikes back</a></li>
+							<li><a href="#" title="Watch Episode VI!">Episode VI - Return of the Jedi</a></li>
+						</ul>
+						</td>
+					
+					</tr>
+					
+					<tr>
+						<td id="slider">
+							<span> Playback </span>
+							<input type="range" min="0" max="145" />
+						</td>
+						
+						<td id="time"> 
+							<span> 00:01:45/02:12:02 </span>
+						</td>
+					
+					</tr>
+		
+					<tr>
+						
+						<td id="buttons"> 
+							<ul>
+								<li><input type="button"value="Previous" /></li>
+								<li><input type="button"value="Play" /></li>
+								<li><input type="button"value="Pause" /></li>
+								<li><input type="button"value="Stop" /></li>
+								<li><input type="button"value="Next" /></li>
+							</ul>
+						</td>
+						
+						<td id="volume">
+							<span id="text-volume"> Volume </span>
+							<input type="range" min="0" max="100" value="73" onchange="showValue(this.value)" />
+							<span id="range">73</span>%
+							<script type="text/javascript">
+							function showValue(newValue)
+							{
+								document.getElementById("range").innerHTML=newValue;
+							}
+							</script>
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

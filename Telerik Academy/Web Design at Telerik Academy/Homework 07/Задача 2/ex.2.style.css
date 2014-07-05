@@ -1,0 +1,54 @@
+﻿html, body, div, img {
+	margin: 0;
+	padding: 0;
+}
+
+.clear:after { 
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+#pictures {
+    margin: 50px;
+    padding: 50px;
+    border-radius: 30px;
+    background: #fff;
+    text-align: center;
+}	
+    
+.image {
+	margin: 20px;
+	display: inline-block;
+}
+      
+.right {
+	padding: 0 7px 0 0;
+	background: url(images/right.png) repeat-y right top;
+}
+        
+.topRight {
+	margin: 0 0 -10px 7px;
+	background: url(images/topRight.png) no-repeat right top;
+	width: 100%;
+	height: 9px;
+}
+        
+.bottom {
+	margin: -5px 0 0 0;
+	height: 8px;
+	background: url(images/bottom.png) repeat-x;
+}
+
+.bottomLeft {
+	width: 8px;
+	height: 8px;
+	background: url(images/bottomLeft.png) no-repeat;
+}
+
+.bottomRight {
+	margin: -8px -7px 0 0px;
+	height: 8px;
+	background: url(images/bottomRight.png) no-repeat right top;
+}

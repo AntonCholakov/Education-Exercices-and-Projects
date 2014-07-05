@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number1 = parseInt(window.prompt("Your first number?"));
+			var number2 = parseInt(window.prompt("Your second number?"));
+			var number3 = parseInt(window.prompt("Your third number?"));
+			var max;
+			
+			function getMax(number1, number2) {
+				max = number1;
+				if (number2 > number1) {
+					max = number2;
+				}
+				
+				return max;
+			}
+			
+			getMax(number1, number2);
+			
+			if(number3 > max) {
+				max = number3;
+			}
+			
+			document.write("The biggest of the three numbers is " + max);
+			
+		</script>
+			
+	</body>
+</html>

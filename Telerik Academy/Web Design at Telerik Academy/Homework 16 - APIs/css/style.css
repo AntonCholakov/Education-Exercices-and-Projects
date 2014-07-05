@@ -1,0 +1,49 @@
+﻿#random-place {
+	width: 400px;
+	height: 1200px;
+	float: left;
+}
+
+#trash-bucket {
+	background: url('../images/trash-bucket.png');
+	width: 225px;
+	height: 317px;
+	float: left;
+}
+
+.trash {
+	background: url('../images/trash.png');
+	width: 88px;
+	height: 62px;
+}
+
+#trash1 {
+	position: absolute;
+		top: 200px;
+		left: 548px;
+}
+#trash2 {
+	position: absolute;
+		top: 400px;
+		left: 400px;
+}
+#trash3 {
+	position: absolute;
+		top: 100px;
+		left: 328px;
+}
+#trash4 {
+	position: absolute;
+		top: 50px;
+		left: 358px;
+}
+#trash5 {
+	position: absolute;
+		top: 290px;
+		left: 128px;
+}
+#trash6 {
+	position: absolute;
+		top: 521px;
+		left: 368px;
+}

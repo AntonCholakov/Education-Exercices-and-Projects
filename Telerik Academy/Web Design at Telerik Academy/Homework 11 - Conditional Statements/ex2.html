@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var first = parseInt(window.prompt("Enter first number"));
+			var second = parseInt(window.prompt("Enter second number"));
+			var third = parseInt(window.prompt("Enter third number"));
+			
+			if( first > 0 && second > 0 && third > 0 ) {
+				alert("The product is greater than 0");
+			}
+			else if( first > 0 && second > 0 && third < 0) {
+				alert("The product is less than 0");
+			}
+			else if( first > 0 && second < 0 && third > 0) {
+				alert("The product is less than 0");
+			}
+			else if( first > 0 && second < 0 && third < 0) {
+				alert("The product is greater than 0");
+			}
+			else if( first < 0 && second > 0 && third > 0) {
+				alert("The product is less than 0");
+			}
+			else if( first < 0 && second > 0 && third < 0) {
+				alert("The product is greater than 0");
+			}
+			else if( first < 0 && second < 0 && third > 0 ) {
+				alert("The product is greater than 0");
+			}
+			else {
+				alert("The product is less than 0");
+			}
+			
+		</script>
+			
+	</body>
+</html>

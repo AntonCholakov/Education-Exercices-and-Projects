@@ -1,0 +1,61 @@
+﻿a {
+	text-decoration: none;
+	text-align: center;
+	color: #BBB9C4;
+	display:block;
+}
+
+li {
+	float: left;
+	background-color: #F1F1F1;
+	background-image: url("images/border.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	padding: 30px;
+	padding-bottom: 12px;
+	padding-right: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li:first-child {
+	background-image: none;
+}
+
+
+.dashboard {
+	background-image: url("images/dashboard.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.tasks {
+	background-image: url("images/tasks.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.users {
+	background-image: url("images/users.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.reports {
+	background-image: url("images/reports.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}
+
+.errorpages {
+	background-image: url("images/errorpages.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+}

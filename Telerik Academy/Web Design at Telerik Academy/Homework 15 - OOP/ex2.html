@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var Human = function(name, gender, address, number) {
+			
+				this.name = name;
+				this.gender = gender;
+				this.address = address;
+				this.number = number;
+				
+				this.getDetails = function(name) {
+					return "My name is " + name + ". I am a " + gender + ". I am from " + address + ". My telephone number is " + number + ".";
+				}
+				
+			}
+			
+			function Student(school, marks) {
+                Human.apply(this, arguments);
+				
+				this.school = school;
+				this.marks = marks;
+				
+				// Function with student's information
+				this.getInfo = function() {
+					return "School: " + school +"; Marks: " + marks;
+				}
+				
+				// Function for finding the average of the marks
+				this.getAverage = function() {
+					var sum = 0;
+					for (var i = 0; i < marks.length; i++) {
+						sum += marks[i]
+					}
+					var average = sum / marks.length;
+					return average;
+				}
+				// Function for adding marks
+				this.addMark = function(newMark) {
+					marks.push(newMark);
+				}
+				
+				// Function for removing marks
+				this.removeMark = function() {
+					marks.pop();
+				}
+					
+            }
+            Student.prototype = new Human();
+            Student.prototype.constructor = Student;
+			
+			var anton = new Student("PG Hristo Smirnenski", [6,4,6,5,6,4,5]);
+			
+		</script>
+			
+	</body>
+</html>

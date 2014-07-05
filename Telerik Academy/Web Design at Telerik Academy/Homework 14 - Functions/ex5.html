@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 5</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var n = parseInt(window.prompt("Enter the number of elements you want to check for"));
+			var array = new Array(n);
+			
+			for(var i = 0; i < array.length; i++) {
+				array[i] = parseInt(window.prompt("Enter a number of your array"));
+			}
+			
+			var position = parseInt(window.prompt("Enter the position of the array you want to check for"));
+			
+			function compareInArray(position, array) {
+				
+				if(array[position] > array[position - 1] && array[position] > array[position +1]) {
+					document.write("The number at the position " + position + " is bigger than the previous and the next one position");
+				}
+				else {
+					document.write("The number at the position " + position + " is not bigger than the previous and the next one position");
+				}
+			}
+			
+			compareInArray(position, array);
+			
+		</script>
+			
+	</body>
+</html>

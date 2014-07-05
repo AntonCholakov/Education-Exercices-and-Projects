@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 8</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var a = parseFloat(window.prompt("Enter a"));
+			var b = parseFloat(window.prompt("Enter b"));
+			var h = parseFloat(window.prompt("Enter h"));
+			
+			var area = ( a + b ) * h / 2;
+			
+			if ( a <= 0 || b <= 0 || h <= 0) {
+				alert("Enter positive values!");
+			}
+			else {
+				alert("The area is " + area);
+			}
+			
+		</script>
+			
+	</body>
+</html>

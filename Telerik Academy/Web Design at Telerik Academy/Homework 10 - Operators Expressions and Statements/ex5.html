@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 5</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var number = parseInt(window.prompt("Enter a number"));
+			var binNumber = number.toString(2);
+			var thirdBit;
+			
+			number = number>>3;
+			
+			if ( number % 2 == 0 ) {
+				thirdBit = 0;
+			}
+			else {
+				thirdBit = 1;
+			}
+			
+			alert("Your number represented as binary is " + binNumber + ", so the third bit, counting from 0, is " + thirdBit);
+			
+		
+			
+		</script>
+			
+	</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 7</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+
+		<script type="text/javascript">
+			
+				var var1 = 0;
+				var var2 = 1;
+				var var3;
+				var sum = 1;
+		 
+				var num = prompt("Enter a limit to Fibonacci numbers");
+				
+				if (num > 1) {
+				
+				document.write("... And the first " + num + " numbers you want are: <br>");
+				document.write(var1+"<br>");
+				document.write(var2+"<br>");
+		 
+				for (var i=3; i <= num;i++) {
+					var3 = var1 + var2;
+					var1 = var2;
+					var2 = var3;
+		 
+					document.write(var3+"<br />");
+					
+					sum = sum + var3;
+				}
+				
+				document.write("The sum of the first " + num + " numbers of the sequence of Fibonacci is " + sum);
+			
+				}
+				else if (num == 1) {
+					document.write("The first number of the sequence of Fibonacci is 0");
+				}
+				else {
+					document.write("Enter a number bigger than 0");
+				}
+				
+		</script>
+			
+	</body>
+</html>

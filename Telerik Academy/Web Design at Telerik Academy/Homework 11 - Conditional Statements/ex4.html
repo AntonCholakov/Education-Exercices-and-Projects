@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			
+			var first = parseInt(window.prompt("Enter first number"));
+			var second = parseInt(window.prompt("Enter second number"));
+			var third = parseInt(window.prompt("Enter third number"));
+			
+			if ( first > second && second > third ) {
+				alert("Your numbers in descending order are " + first + "; " + second + "; " + third);
+			}
+			else if ( second > first && first > third ) {
+				alert("Your numbers in descending order are " + second + "; " + first + "; " + third);
+			}
+			else if ( third > first && first > second ) {
+				alert("Your numbers in descending order are " + third + "; " + first + "; " + second);
+			}
+			else if ( first > second && third > second && first > third  ) {
+				alert("Your numbers in descending order are " + first + "; " + third + "; " + second);
+			}
+			else if ( second > first && third > first && third > second  ) {
+				alert("Your numbers in descending order are " + third + "; " + second + "; " + first);
+			}
+			else if ( second > first && third > first && second > third  ) {
+				alert("Your numbers in descending order are " + second + "; " + third + "; " + first);
+			} else {
+				alert("You have entered numbers which are equal");
+			}
+			
+			
+		</script>
+			
+	</body>
+</html>
