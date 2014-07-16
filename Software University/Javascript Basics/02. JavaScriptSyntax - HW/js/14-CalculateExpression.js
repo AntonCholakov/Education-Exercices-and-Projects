@@ -1,4 +1,6 @@
 document.getElementById("calc").onclick = function () {
-    var result = eval(document.getElementById("expression").value);
+	var expr = document.getElementById("expression").value
+	expr = expr.replace(/[^\d\+\-\*\/\.\(\)%]/g, '');
+    var result = eval(expr);
     document.getElementById("result").innerHTML= result;
 };
