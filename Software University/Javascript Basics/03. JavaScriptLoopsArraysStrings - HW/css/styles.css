@@ -1,0 +1,26 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	font-family: Kneyawe, cursive;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	border: 2px inset #ccc;
+	border-radius: 12px;
+	width: 950px;
+	margin: 0 auto;
+}
