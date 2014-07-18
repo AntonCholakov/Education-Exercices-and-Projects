@@ -6,7 +6,7 @@ function findMaxSeq(nums) {
     for (var i = 1; i < nums.length; i++) {
         if(nums[i-1] == nums[i]) {
             currentSequence++;
-            if (currentSequence > longestSequence) {
+            if (currentSequence >= longestSequence) {
                 longestSequence = currentSequence; // change max lenght to the temporary lenght
                 maxSeqNum = nums[i]; // set the number of the longest temp sequence
             }
@@ -32,3 +32,4 @@ function findMaxSeq(nums) {
 findMaxSeq([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
 findMaxSeq(['happy']);
 findMaxSeq([2, 'qwe', 'qwe', 3, 3, '3']);
+findMaxSeq([1, 1, 1, 3, 3, 2, 2, 2]);
