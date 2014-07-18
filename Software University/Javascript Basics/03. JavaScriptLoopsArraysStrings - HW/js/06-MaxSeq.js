@@ -4,7 +4,7 @@ function findMaxSeq(nums) {
         maxSeqNum = nums[0]; // the maximal sequence first start with the first number
 
     for (var i = 1; i < nums.length; i++) {
-        if(nums[i-1] == nums[i]) {
+        if(nums[i-1] === nums[i]) {
             currentSequence++;
             if (currentSequence >= longestSequence) {
                 longestSequence = currentSequence; // change max lenght to the temporary lenght
