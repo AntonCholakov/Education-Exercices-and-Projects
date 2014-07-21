@@ -1,6 +1,6 @@
 function displayProperties() {
     var properties = [];
-    for (var prop in window) {
+    for (var prop in document) {
         properties.push(prop);
     }
 

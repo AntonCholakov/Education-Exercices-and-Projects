@@ -1,7 +1,7 @@
 function countSubstringOccur(arg) {
     var substr = arg[0];
     var str = arg[1];
-    strToLower = str.toLowerCase();
+    var strToLower = str.toLowerCase();
 
     var re = new RegExp(substr, 'g'); //create a regex to match
     var count = strToLower.match(re);
