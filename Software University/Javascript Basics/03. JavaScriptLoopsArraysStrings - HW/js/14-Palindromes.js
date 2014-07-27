@@ -2,6 +2,7 @@ function findPalindromes(str) {
     var strToLower = str.toLowerCase();
 
     var words = strToLower.split(/\W+/);
+	words = words.filter(Boolean); //removing empty elements
     var result = [];
 
     for (var i = 0; i < words.length; i++) {
