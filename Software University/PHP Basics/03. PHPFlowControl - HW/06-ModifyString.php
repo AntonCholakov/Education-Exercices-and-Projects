@@ -63,8 +63,8 @@
 		return implode(" ", $arr);
 	}
 	function hashString($str) {
-		$hashed = hash('sha256', $str);
-		return $hashed;
+		$crypted = crypt($str);
+		return $crypted;
 	}
 	function shuffleString($str) {
 		$arr = str_split($str);
