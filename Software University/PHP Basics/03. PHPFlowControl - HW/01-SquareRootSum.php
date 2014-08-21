@@ -38,8 +38,9 @@
 			<?php 
 				$total = 0;
 				for($i = 0; $i <= 100; $i += 2):
-					$roundedSqrt = round(sqrt($i),2);
-					$total += $roundedSqrt;
+					$sqrt = sqrt($i);
+					$roundedSqrt = round($sqrt,2);
+					$total += $sqrt;
 			?>
 				<tr>
 					<td><?= $i; ?></td>
